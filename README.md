@@ -1,6 +1,6 @@
 
-## Challenge De Sistema de Clinica
-# Enunciado
+# Challenge De Sistema de Clinica
+## Enunciado
 La clinica cuenta con una lista con medicos y pacientes.
 
 De los medicos se conoce el numero de matricula, nombre y especialidad.
@@ -23,6 +23,12 @@ De todas las consultas se sabe la fecha de realizacion, el profesional que la re
 - EntityFrameworkCore.Tools
 - Microsoft.EntityFrameworkCore.Design
 - Microsoft.EntityFrameworkCore.SqlServer
+# Planteamiento de Uml
+## Base de datos
+![image](https://user-images.githubusercontent.com/64883289/161388948-c5f5eaa2-bed7-4059-aea4-2384e3ac9425.png)
+## Clases
+![image](https://user-images.githubusercontent.com/64883289/161389629-e35ee04c-9817-4002-b2aa-ccf9cce68bff.png)
+
 
 
 ## Autor
