@@ -20,7 +20,6 @@ namespace SistemasClinica.Controllers
             var professionals = await _repository.GetProfessionalAsync();
             return View(professionals);
         }
-        
         public IActionResult Create() 
         {
             return View();
@@ -45,7 +44,6 @@ namespace SistemasClinica.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
@@ -65,6 +63,11 @@ namespace SistemasClinica.Controllers
                 return NotFound();
             return View(professional);
         }
+        /// <summary>
+        /// Confirm the delete of a professional
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirm(int? id)
         {

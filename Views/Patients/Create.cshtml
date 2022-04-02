@@ -1,7 +1,9 @@
-﻿@model Professional
+﻿@model Patient
+
 @{
-    ViewData["Title"] = "Agregar Profesional";
+    ViewData["Title"] = "Crear Paciente";
 }
+
 <div class="row">
     <form asp-action="Create">
         <div class="form-group">
@@ -9,17 +11,18 @@
             <input asp-for="Name" class="form-control">
         </div>
         <div class="form-group">
-            <label asp-for="NumberKey" class="control-label">Matricula</label>
+            <label asp-for="NumberKey" class="control-label">Historia clinica</label>
             <input asp-for="NumberKey" class="form-control">
         </div>
         <div class="form-group">
-            <label asp-for="Speciality" class="control-label">Especialidad</label>
-            <input asp-for="Speciality" class="form-control">
+            <label asp-for="ConsultId">Consulta</label>
+            <select asp-for="ConsultId" name="Consult">
+                @foreach (Consult consult in ViewBag.consults)
+                {
+                    <option value="@consult.Id">@consult.Description</option>
+                }
+            </select>
         </div>
-        <div class="form.-group">
-            <input type="submit" value="Create" class="btn btn-primary" />
-        </div>
-
     </form>
 </div>
 <div>

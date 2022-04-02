@@ -1,8 +1,9 @@
-﻿@model Professional
+﻿@model Patient
 @{
-    ViewData["Title"] = "Borrar Profesional";
+    ViewData["Title"] = "Borrar Paciete";
 }
-<h3> ¿Desea borrar el profesional? </h3>
+
+<h3> ¿Desea borrar el consulta? </h3>
 <table class="table table-success">
     <thead>
         <tr>
@@ -20,8 +21,8 @@
                     @Html.DisplayNameFor(model => model.NumberKey): @Html.DisplayFor(model => model.NumberKey)
                 </p>
                 <p>
-                    @Html.DisplayNameFor(model => model.Speciality): @Html.DisplayFor(model => model.Speciality)
-                </p>
+                    @Html.DisplayNameFor(model => model.Consult): @Html.DisplayFor(model => model.Consult.Description)
+                </p>    
             </td>
             <td>
                 <form asp-action="Delete" method="POST">

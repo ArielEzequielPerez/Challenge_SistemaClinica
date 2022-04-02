@@ -40,12 +40,7 @@ namespace SistemasClinica.Controllers
             _repository.Add(consult);
             await _repository.SaveAll();
             return RedirectToAction("Index");
-        }/*
-        public async Task<IActionResult> Edit()
-        {
-            ViewBag.profesionals =  await _repository.GetProfessionalAsync();
-            return View();
-        }*/
+        }
         /// <summary>
         /// Edit a consult
         /// </summary>
@@ -70,6 +65,11 @@ namespace SistemasClinica.Controllers
                 return NotFound();
             return View(consult);
         }
+        /// <summary>
+        /// Confirm the delete of a consult
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirm(int? id)
         {
@@ -78,6 +78,5 @@ namespace SistemasClinica.Controllers
             await _repository.SaveAll();
             return RedirectToAction("Index");
         }
-
     }
 }
