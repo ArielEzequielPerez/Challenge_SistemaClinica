@@ -1,10 +1,16 @@
-﻿namespace SistemasClinica.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SistemasClinica.Models
 {
     public class Person : EntityBase
     {
-        public string Name { get; set; }
+       [Required(ErrorMessage ="Ingrese un nombre")]
+       [Display (Name = "Nombre")]
+       public string Name { get; set; }
+       [Required]
+       [Display(Name = "Codigo")]
        
-        public string NumberKey { get; set; }
+       public string NumberKey { get; set; }
 
     }
 }

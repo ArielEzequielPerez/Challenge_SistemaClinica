@@ -2,9 +2,7 @@
 @{
     ViewData["Title"] = "Pacientes";
 }
-<div>
-    <a class="btn btn-success" asp-controller="Consults" asp-action="Index">Agregar Consulta</a>
-</div></br>
+
 <table class="table">
     <tr>
         <th>@Html.DisplayNameFor(model => model.Name)</th>
@@ -33,4 +31,7 @@
 </table>
 <div>
     <a asp-action="Create" class="btn btn-primary">Agregar Nuevo Profesional</a>
+</div>
+<div>
+    <a class="btn btn-success" asp-controller="Consults" asp-action="Index">Agregar Consulta</a>
 </div>
