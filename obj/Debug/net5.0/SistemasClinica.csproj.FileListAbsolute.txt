@@ -332,7 +332,6 @@ C:\Challenge\SistemasClinica\obj\Debug\net5.0\SistemasClinica.TagHelpers.input.c
 C:\Challenge\SistemasClinica\obj\Debug\net5.0\SistemasClinica.TagHelpers.output.cache
 C:\Challenge\SistemasClinica\obj\Debug\net5.0\SistemasClinica.RazorCoreGenerate.cache
 C:\Challenge\SistemasClinica\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Challenge\SistemasClinica\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Challenge\SistemasClinica\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Challenge\SistemasClinica\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Challenge\SistemasClinica\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs

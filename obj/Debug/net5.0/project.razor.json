@@ -15619,18 +15619,43 @@
   "RootNamespace": "SistemasClinica",
   "Documents": [
     {
+      "FilePath": "c:\\Challenge\\SistemasClinica\\Views\\Consults\\Delete.cshtml",
+      "TargetPath": "Views\\Consults\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Challenge\\SistemasClinica\\Views\\Patients\\Create.cshtml",
+      "TargetPath": "Views\\Patients\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Challenge\\SistemasClinica\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Challenge\\SistemasClinica\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Challenge\\SistemasClinica\\Views\\Consults\\Create.cshtml",
+      "TargetPath": "Views\\Consults\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Challenge\\SistemasClinica\\Views\\Patients\\Index.cshtml",
+      "TargetPath": "Views\\Patients\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Challenge\\SistemasClinica\\Views\\Consults\\Index.cshtml",
+      "TargetPath": "Views\\Consults\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
       "FilePath": "c:\\Challenge\\SistemasClinica\\Views\\Professionals\\Create.cshtml",
       "TargetPath": "Views\\Professionals\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Challenge\\SistemasClinica\\Views\\Professionals\\Delete.cshtml",
+      "TargetPath": "Views\\Professionals\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15649,8 +15674,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Challenge\\SistemasClinica\\Views\\Consults\\Edit.cshtml",
+      "TargetPath": "Views\\Consults\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Challenge\\SistemasClinica\\Views\\Professionals\\Edit.cshtml",
       "TargetPath": "Views\\Professionals\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Challenge\\SistemasClinica\\Views\\Patients\\Delete.cshtml",
+      "TargetPath": "Views\\Patients\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15661,6 +15696,11 @@
     {
       "FilePath": "c:\\Challenge\\SistemasClinica\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Challenge\\SistemasClinica\\Views\\Patients\\Edit.cshtml",
+      "TargetPath": "Views\\Patients\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {

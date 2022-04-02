@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = SistemasClinica
-build_property.ProjectDir = C:\Challenge\SistemasClinica\
+build_property.ProjectDir = c:\Challenge\SistemasClinica\
