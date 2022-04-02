@@ -433,3 +433,6 @@ C:\Challenge\SistemasClinica\obj\Debug\net5.0\Razor\Views\Professionals\Index.cs
 C:\Challenge\SistemasClinica\obj\Debug\net5.0\Razor\Views\Professionals\Create.cshtml.g.cs
 C:\Challenge\SistemasClinica\obj\Debug\net5.0\Razor\Views\Professionals\Edit.cshtml.g.cs
 C:\Challenge\SistemasClinica\obj\Debug\net5.0\Razor\Views\Professionals\delete.cshtml.g.cs
+C:\Challenge\SistemasClinica\obj\Debug\net5.0\Razor\Views\Consults\Index.cshtml.g.cs
+C:\Challenge\SistemasClinica\obj\Debug\net5.0\Razor\Views\Consults\Create.cshtml.g.cs
+C:\Challenge\SistemasClinica\obj\Debug\net5.0\Razor\Views\Consults\Edit.cshtml.g.cs

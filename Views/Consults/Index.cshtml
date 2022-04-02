@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Consult>
+@{
+    ViewData["Title"] = "Professional";
+}
+<h1>Profesionales</h1>
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.DateRealitazion)</th>
+        <th>@Html.DisplayNameFor(model => model.Cost)</th>
+
+        <th>@Html.DisplayNameFor(model => model.Professional)</th>
+        <th>@Html.DisplayNameFor(model => model.Description)</th>
+        <th>@Html.DisplayNameFor(model => model.CostMaterial)</th>
+        <th>Acciones</th>
+    </tr>
+    <tbody>
+        @foreach (Consult consult in @Model)
+        {
+        <tr>
+            <td> @Html.DisplayFor(modelItem => consult.DateRealitazion) </td>
+            <td rowspan="3"> @Html.DisplayFor(modelItem => consult.Cost)</td>
+            <td> @Html.DisplayFor(modelItem => consult.Professional.Name)</td>
+            <td> @Html.DisplayFor(modelItem => consult.Professional.NumberKey)</td>
+            <td> @Html.DisplayFor(modelItem => consult.Professional.Speciality)</td>
+            <td> @Html.DisplayFor(modelItem => consult.Description)</td>
+            <td> @Html.DisplayFor(modelItem => consult.CostMaterial)  </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@consult.Id" class="btn btn-dark">Editar</a> |
+                <a asp-action="Delete" asp-route-id="@consult.Id" class="btn btn-danger">Borrar</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+<div>
+    <a asp-action="Create" class="btn btn-primary">Agregar Nuevo Profesional</a>
+</div>

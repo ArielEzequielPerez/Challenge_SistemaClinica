@@ -1,0 +1,44 @@
+﻿@model Consult
+@{
+    ViewData["Title"] = "Borrar Consulta";
+}
+
+<h3> ¿Desea borrar el consulta? </h3>
+<table class="table table-success">
+    <thead>
+        <tr>
+            <th scope="col">Presentación</th>
+            <th scope="col">Acción</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <p>
+                    @Html.DisplayNameFor(model => model.Professional): @Html.DisplayFor(model => model.Professional.Name)
+                </p>
+                <p>
+                    @Html.DisplayNameFor(model => model.DateRealitazion): @Html.DisplayFor(model => model.DateRealitazion)
+                </p>
+                <p>
+                    @Html.DisplayNameFor(model => model.Cost): @Html.DisplayFor(model => model.Cost)
+                </p>
+                <p>
+                    @Html.DisplayNameFor(model => model.CostMaterial): @Html.DisplayFor(model => model.CostMaterial)
+                </p>
+                <p>
+                    @Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)
+                </p>
+            </td>
+            <td>
+                <form asp-action="Delete" method="POST">
+                    <input type="hidden" asp-for="Id" />
+                    <input type="submit" value="Borrar" class="btn btn-primary" />
+                </form>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Volver</a>
+</div>

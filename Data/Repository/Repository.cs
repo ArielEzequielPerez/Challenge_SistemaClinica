@@ -2,6 +2,7 @@
 using SistemasClinica.Data.Repository.Interfaces;
 using SistemasClinica.Models;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace SistemasClinica.Data.Repository
@@ -54,6 +55,11 @@ namespace SistemasClinica.Data.Repository
         public async Task<IEnumerable<Consult>> GetConsultsByIdAsync(int id)
         {
             return (IEnumerable<Consult>)await _context.Consults.FindAsync(id);
+        }
+
+        public IEnumerable<Consult> GetConsults()
+        {
+            return _context.Consults.ToList();
         }
     }
 }

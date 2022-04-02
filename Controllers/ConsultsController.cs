@@ -2,76 +2,82 @@
 using SistemasClinica.Data.Repository.Interfaces;
 using SistemasClinica.Models;
 using System.Threading.Tasks;
+
 namespace SistemasClinica.Controllers
 {
-    public class ProfessionalsController : Controller
+    public class ConsultsController : Controller
     {
         private readonly IRepository _repository;
-        public ProfessionalsController(IRepository repository)
+        public ConsultsController(IRepository repository)
         {
             _repository = repository;
         }
         /// <summary>
-        /// Get professionals information.
+        /// Get consults information.
         /// </summary>
         /// <returns></returns>
         public async Task<IActionResult> Index()
         {
-            var professionals = await _repository.GetProfessionalAsync();
-            return View(professionals);
+            var consults = await _repository.GetConsultsAsync();
+            return View(consults);
         }
-        
-        public IActionResult Create() 
+        public async Task<IActionResult> Create()
         {
+            ViewBag.profesionals =  await _repository.GetProfessionalAsync();
             return View();
         }
         /// <summary>
-        ///  Creates a new professional.
+        ///  Creates a new Consult.
         /// </summary>
-        /// <param name="professional"></param>
+        /// <param name="consult"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> Create(Professional professional)
+        public async Task<IActionResult> Create(Consult consult)
         {
             if (!ModelState.IsValid)
-                 return NotFound();
-            
-            _repository.Add(professional);
+                return NotFound();
+
+            _repository.Add(consult);
             await _repository.SaveAll();
             return RedirectToAction("Index");
-        }
+        }/*
+        public async Task<IActionResult> Edit()
+        {
+            ViewBag.profesionals =  await _repository.GetProfessionalAsync();
+            return View();
+        }*/
         /// <summary>
-        /// Edit a professional
+        /// Edit a consult
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
                 return NotFound();
-            var professional = await _repository.GetProfessionalByIdAsync(id.Value);
-            if (professional == null)
+            var consult = await _repository.GetConsultsByIdAsync(id.Value);
+            if (consult == null)
                 return NotFound();
-            return View(professional);
+            return View(consult);
         }
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
                 return NotFound();
-            var professional = await _repository.GetProfessionalByIdAsync(id.Value);
-            if (professional == null)
+            var consult = await _repository.GetConsultsByIdAsync(id.Value);
+            if (consult == null)
                 return NotFound();
-            return View(professional);
+            return View(consult);
         }
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirm(int? id)
         {
-            var professional = await _repository.GetProfessionalByIdAsync(id.Value);
-            _repository.Delete(professional);
+            var consult = await _repository.GetConsultsByIdAsync(id.Value);
+            _repository.Delete(consult);
             await _repository.SaveAll();
             return RedirectToAction("Index");
         }
+
     }
 }
